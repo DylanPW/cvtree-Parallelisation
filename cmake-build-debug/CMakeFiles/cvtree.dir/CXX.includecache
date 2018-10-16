@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Projects/cvtree/parallel.cpp
+stdio.h
+-
+string.h
+-
+time.h
+-
+math.h
+-
+vector
+-
+algorithm
+-
+iostream
+-
+fstream
+-
+omp.h
+-
+

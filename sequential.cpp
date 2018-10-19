@@ -7,6 +7,8 @@
 #include <iostream>
 #include <fstream>
 #include <omp.h>
+#include <chrono>
+using namespace std::chrono;
 
 int number_bacteria;
 char** bacteria_name;
@@ -273,12 +275,14 @@ void CompareAllBacteria()
 
 int main(int argc,char * argv[])
 {
-	time_t t1 = time(NULL);
+	high_resolution_clock::time_point t1 = high_resolution_clock::now();
+
 
 	Init();
 	ReadInputFile(argv[1]);
 	CompareAllBacteria();
+	high_resolution_clock::time_point t2 = high_resolution_clock::now();
 
-	time_t t2 = time(NULL);
-	printf("time elapsed: %d seconds\n", t2 - t1);
+	duration<double, std::milli> time_span = t2 - t1;
+	printf("time elapsed: %f milliseconds\n", time_span.count());
 }

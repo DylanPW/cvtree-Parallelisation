@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Projects/cvtree/parallel.cpp
+C:/Projects/cvtree/sequential.cpp
 stdio.h
 -
 string.h

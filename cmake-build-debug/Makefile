@@ -122,32 +122,32 @@ cvtree/fast:
 	$(MAKE) -f CMakeFiles\cvtree.dir\build.make CMakeFiles/cvtree.dir/build
 .PHONY : cvtree/fast
 
-parallel.obj: parallel.cpp.obj
+sequential.obj: sequential.cpp.obj
 
-.PHONY : parallel.obj
+.PHONY : sequential.obj
 
 # target to build an object file
-parallel.cpp.obj:
-	$(MAKE) -f CMakeFiles\cvtree.dir\build.make CMakeFiles/cvtree.dir/parallel.cpp.obj
-.PHONY : parallel.cpp.obj
+sequential.cpp.obj:
+	$(MAKE) -f CMakeFiles\cvtree.dir\build.make CMakeFiles/cvtree.dir/sequential.cpp.obj
+.PHONY : sequential.cpp.obj
 
-parallel.i: parallel.cpp.i
+sequential.i: sequential.cpp.i
 
-.PHONY : parallel.i
+.PHONY : sequential.i
 
 # target to preprocess a source file
-parallel.cpp.i:
-	$(MAKE) -f CMakeFiles\cvtree.dir\build.make CMakeFiles/cvtree.dir/parallel.cpp.i
-.PHONY : parallel.cpp.i
+sequential.cpp.i:
+	$(MAKE) -f CMakeFiles\cvtree.dir\build.make CMakeFiles/cvtree.dir/sequential.cpp.i
+.PHONY : sequential.cpp.i
 
-parallel.s: parallel.cpp.s
+sequential.s: sequential.cpp.s
 
-.PHONY : parallel.s
+.PHONY : sequential.s
 
 # target to generate assembly for a file
-parallel.cpp.s:
-	$(MAKE) -f CMakeFiles\cvtree.dir\build.make CMakeFiles/cvtree.dir/parallel.cpp.s
-.PHONY : parallel.cpp.s
+sequential.cpp.s:
+	$(MAKE) -f CMakeFiles\cvtree.dir\build.make CMakeFiles/cvtree.dir/sequential.cpp.s
+.PHONY : sequential.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... cvtree
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... parallel.obj
-	@echo ... parallel.i
-	@echo ... parallel.s
+	@echo ... sequential.obj
+	@echo ... sequential.i
+	@echo ... sequential.s
 .PHONY : help
 
 

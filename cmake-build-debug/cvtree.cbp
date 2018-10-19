@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Projects/cvtree/parallel.cpp">
+		<Unit filename="C:/Projects/cvtree/sequential.cpp">
 			<Option target="cvtree"/>
 		</Unit>
 		<Unit filename="C:/Projects/cvtree/CMakeLists.txt">

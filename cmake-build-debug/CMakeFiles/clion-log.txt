@@ -1,5 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Projects\cvtree
-generator is set to Unix
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Projects/cvtree/cmake-build-debug

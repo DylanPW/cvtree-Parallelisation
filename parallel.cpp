@@ -7,7 +7,8 @@
 #include <iostream>
 #include <fstream>
 #include <omp.h>
-
+#include <chrono>
+using namespace std::chrono;
 using namespace std;
 
 int number_bacteria;
@@ -18,7 +19,7 @@ short code[27] = { 0, 2, 1, 2, 3, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 
 #define LEN				6
 #define AA_NUMBER		20
 #define	EPSILON			1e-010
-//#define THREAD_COUNT    4
+#define THREAD_COUNT    16
 // debug function to ascertain thread count
 int omp_thread_count() {
     int n = 0;
@@ -35,7 +36,7 @@ void Init()
 	M1 = M2 * AA_NUMBER;		// M1 = AA_NUMBER ^ (LEN-1);
 	M  = M1 *AA_NUMBER;			// M  = AA_NUMBER ^ (LEN);
 
-//	omp_set_num_threads(THREAD_COUNT);
+	omp_set_num_threads(THREAD_COUNT);
     printf("Threads: %d\n",omp_thread_count());
 }
 
@@ -194,7 +195,7 @@ void ReadInputFile(char* input_name)
     fscanf(input_file,"%d",&number_bacteria);
 	bacteria_name = new char*[number_bacteria];
 
-    // CANNOT PARALLEISE, INVOLVES LOADING TO ARRAY
+    // CANNOT PARALLELISE, INVOLVES LOADING TO ARRAY
 	for(long i=0;i<number_bacteria;i++)
 	{
 		bacteria_name[i] = new char[20];
@@ -258,11 +259,10 @@ void CompareAllBacteria()
 	Bacteria** b = new Bacteria*[number_bacteria];
 
 	printf("Loading...\n");
-//#pragma omp parallel for schedule(dynamic)
     #pragma omp parallel for
     for(int i=0; i<number_bacteria; i++)
 	{
-//		printf("load %d of %d\n", i+1, number_bacteria);
+        //printf("load %d of %d\n", i+1, number_bacteria);
 		b[i] = new Bacteria(bacteria_name[i]);
 	}
 
@@ -279,7 +279,7 @@ void CompareAllBacteria()
         {
             double correlation = CompareBacteria(b[i], b[j]);
             // remove printf to improve exec time
-//            printf("%2d %2d -> %.20lf\n", i, j, correlation);
+            //printf("%2d %2d -> %.20lf\n", i, j, correlation);
             debug[i][j] = correlation;
         }
     }
@@ -293,12 +293,13 @@ void CompareAllBacteria()
 
 int main(int argc,char * argv[])
 {
-	time_t t1 = time(NULL);
+	high_resolution_clock::time_point t1 = high_resolution_clock::now();
 
 	Init();
 	ReadInputFile(argv[1]);
 	CompareAllBacteria();
 
-	time_t t2 = time(NULL);
-	printf("time elapsed: %d seconds\n", t2 - t1);
+	high_resolution_clock::time_point t2 = high_resolution_clock::now();
+	duration<double, std::milli> time_span = t2 - t1;
+	printf("time elapsed: %f milliseconds\n", time_span.count());
 }

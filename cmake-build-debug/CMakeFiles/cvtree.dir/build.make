@@ -56,27 +56,27 @@ include CMakeFiles/cvtree.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cvtree.dir/flags.make
 
-CMakeFiles/cvtree.dir/sequential.cpp.obj: CMakeFiles/cvtree.dir/flags.make
-CMakeFiles/cvtree.dir/sequential.cpp.obj: ../sequential.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\cvtree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cvtree.dir/sequential.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cvtree.dir\sequential.cpp.obj -c C:\Projects\cvtree\sequential.cpp
+CMakeFiles/cvtree.dir/parallel.cpp.obj: CMakeFiles/cvtree.dir/flags.make
+CMakeFiles/cvtree.dir/parallel.cpp.obj: ../parallel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\cvtree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cvtree.dir/parallel.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\cvtree.dir\parallel.cpp.obj -c C:\Projects\cvtree\parallel.cpp
 
-CMakeFiles/cvtree.dir/sequential.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cvtree.dir/sequential.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\cvtree\sequential.cpp > CMakeFiles\cvtree.dir\sequential.cpp.i
+CMakeFiles/cvtree.dir/parallel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cvtree.dir/parallel.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\cvtree\parallel.cpp > CMakeFiles\cvtree.dir\parallel.cpp.i
 
-CMakeFiles/cvtree.dir/sequential.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cvtree.dir/sequential.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\cvtree\sequential.cpp -o CMakeFiles\cvtree.dir\sequential.cpp.s
+CMakeFiles/cvtree.dir/parallel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cvtree.dir/parallel.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\cvtree\parallel.cpp -o CMakeFiles\cvtree.dir\parallel.cpp.s
 
 # Object files for target cvtree
 cvtree_OBJECTS = \
-"CMakeFiles/cvtree.dir/sequential.cpp.obj"
+"CMakeFiles/cvtree.dir/parallel.cpp.obj"
 
 # External object files for target cvtree
 cvtree_EXTERNAL_OBJECTS =
 
-cvtree.exe: CMakeFiles/cvtree.dir/sequential.cpp.obj
+cvtree.exe: CMakeFiles/cvtree.dir/parallel.cpp.obj
 cvtree.exe: CMakeFiles/cvtree.dir/build.make
 cvtree.exe: CMakeFiles/cvtree.dir/linklibs.rsp
 cvtree.exe: CMakeFiles/cvtree.dir/objects1.rsp

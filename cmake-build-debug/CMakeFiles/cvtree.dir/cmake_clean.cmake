@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cvtree.dir/sequential.cpp.obj"
+  "CMakeFiles/cvtree.dir/parallel.cpp.obj"
   "cvtree.pdb"
   "cvtree.exe"
   "cvtree.exe.manifest"

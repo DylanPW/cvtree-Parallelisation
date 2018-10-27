@@ -6,7 +6,6 @@
 #include <algorithm>
 #include <iostream>
 #include <fstream>
-#include <omp.h>
 #include <chrono>
 using namespace std::chrono;
 
@@ -276,7 +275,6 @@ void CompareAllBacteria()
 int main(int argc,char * argv[])
 {
 	high_resolution_clock::time_point t1 = high_resolution_clock::now();
-
 
 	Init();
 	ReadInputFile(argv[1]);

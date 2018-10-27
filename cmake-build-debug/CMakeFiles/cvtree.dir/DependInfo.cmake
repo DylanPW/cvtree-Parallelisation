@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Projects/cvtree/sequential.cpp" "C:/Projects/cvtree/cmake-build-debug/CMakeFiles/cvtree.dir/sequential.cpp.obj"
+  "C:/Projects/cvtree/parallel.cpp" "C:/Projects/cvtree/cmake-build-debug/CMakeFiles/cvtree.dir/parallel.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

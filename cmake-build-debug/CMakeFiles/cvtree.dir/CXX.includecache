@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Projects/cvtree/sequential.cpp
+C:/Projects/cvtree/parallel.cpp
 stdio.h
 -
 string.h
@@ -24,5 +24,7 @@ iostream
 fstream
 -
 omp.h
+-
+chrono
 -
 

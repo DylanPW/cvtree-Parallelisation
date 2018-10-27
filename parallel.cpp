@@ -19,7 +19,7 @@ short code[27] = { 0, 2, 1, 2, 3, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 
 #define LEN				6
 #define AA_NUMBER		20
 #define	EPSILON			1e-010
-#define THREAD_COUNT    16
+#define THREAD_COUNT    4
 // debug function to ascertain thread count
 int omp_thread_count() {
     int n = 0;

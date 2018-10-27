@@ -14,8 +14,6 @@
     <list default="true" id="30f38fa4-f2a1-491c-b68f-6f9632c474a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paralell" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/build.make" afterDir="false" />
@@ -25,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/objects1.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/parallel.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/parallel.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cvtree.dir/sequential.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cvtree.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cvtree.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cvtree.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cvtree.exe" afterDir="false" />
@@ -99,32 +98,32 @@
     <session id="-602185163">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.5" value="8" />
-          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.5" value="9" />
+          <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="2950" />
-          <entry key="txt" value="83" />
+          <entry key="cpp" value="2956" />
+          <entry key="txt" value="158" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="78" />
-          <entry key="ObjectiveC" value="2950" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="CMakeLists.txt" value="84" />
+          <entry key="ObjectiveC" value="2956" />
+          <entry key="PLAIN_TEXT" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Makefile" value="1" />
-          <entry key="cpp" value="7" />
+          <entry key="cpp" value="8" />
           <entry key="properties" value="3" />
           <entry key="txt" value="2" />
         </counts>
@@ -132,7 +131,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="7" />
+          <entry key="ObjectiveC" value="8" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -144,7 +143,7 @@
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -152,13 +151,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parallel.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="281" column="12" selection-start-line="281" selection-start-column="12" selection-end-line="281" selection-end-column="12" />
+            <state relative-caret-position="-5789">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#532#683#0" />
                 <element signature="e#685#974#0" />
                 <element signature="e#976#3666#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sequential.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="277" selection-start-line="277" selection-end-line="277" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,6 +186,12 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="DylanPW &lt;d.prykewatanabe@gmail.com&gt;" />
+        <option value="DylanPW" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -185,8 +202,8 @@
         <option value="$PROJECT_DIR$/list.txt" />
         <option value="$PROJECT_DIR$/improved.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/sequential.cpp" />
         <option value="$PROJECT_DIR$/parallel.cpp" />
+        <option value="$PROJECT_DIR$/sequential.cpp" />
       </list>
     </option>
   </component>
@@ -197,8 +214,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
+    <option name="x" value="451" />
+    <option name="y" value="43" />
+    <option name="width" value="1534" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -296,18 +314,28 @@
       <workItem from="1539784959685" duration="244000" />
       <workItem from="1539786087577" duration="2103000" />
       <workItem from="1539849293680" duration="2665000" />
-      <workItem from="1539914936811" duration="616000" />
+      <workItem from="1539914936811" duration="867000" />
+      <workItem from="1539938789475" duration="1572000" />
+      <workItem from="1540476431920" duration="20000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated to change clock to milliseconds">
+      <created>1539917256801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539917256801</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56561000" />
+    <option name="totallyTimeSpent" value="58404000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1057" extended-state="0" />
+    <frame x="451" y="43" width="1534" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11925602" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.059023067" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -318,7 +346,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32583067" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3226152" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -338,6 +366,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated to change clock to milliseconds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated to change clock to milliseconds" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tidy.cpp" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
@@ -355,27 +387,27 @@
         <state relative-caret-position="-1449" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sequential.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="536">
+          <caret line="277" selection-start-line="277" selection-end-line="277" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parallel.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="281" column="12" selection-start-line="281" selection-start-column="12" selection-end-line="281" selection-end-column="12" />
+        <state relative-caret-position="-5789">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#532#683#0" />

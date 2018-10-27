@@ -7,6 +7,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++ -static-libgcc -fopenm
 set(arch_hint "x64")
 include_directories(${INCLUDE_DIR})
 add_executable(cvtree
-     sequential.cpp)
+     parallel.cpp)
 
 
